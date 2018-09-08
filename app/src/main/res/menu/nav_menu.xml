@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_subscribe"
+            android:icon="@drawable/add_white"
+            android:title="我的订阅" />
+        <item
+            android:id="@+id/nav_club"
+            android:icon="@drawable/left_menu_ic_users_normal"
+            android:title="我的社团" />
+        <item
+            android:id="@+id/nav_guess"
+            android:icon="@drawable/guess"
+            android:title="我的竞猜" />
+        <item
+            android:id="@+id/nav_message"
+            android:icon="@drawable/ic_comment"
+            android:title="消息" />
+        <item
+            android:id="@+id/nav_money"
+            android:icon="@drawable/left_menu_ic_money_normal"
+            android:title="财富" />
+        <item
+            android:id="@+id/nav_show_love"
+            android:icon="@drawable/love_wall"
+            android:title="表白墙" />
+        <item
+            android:id="@+id/nav_panoramic_campus"
+            android:icon="@drawable/school_360"
+            android:title="全景校园" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/nav_location"
+            android:title="地图" />
+        <item
+            android:id="@+id/nav_apply_host"
+            android:icon="@drawable/left_menu_ic_user_normal"
+            android:title="申请当主播" />
+        <item
+            android:id="@+id/nav_set"
+            android:icon="@drawable/ic_settings"
+            android:title="设置" />
+    </group>
+</menu>

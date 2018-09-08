@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_edit_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/editprofile_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        app:titleTextColor="@android:color/white"></android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/avatar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:minHeight="50dp"
+                android:padding="5dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_info_avatar"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/avatar"
+                    android:textColor="#333"/>
+                <ImageView
+                    android:id="@+id/avatar_img"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+            <com.example.dinary.kekocampuslive.editprofile.EditProfile
+                android:id="@+id/nick_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.example.dinary.kekocampuslive.editprofile.EditProfile>
+
+            <com.example.dinary.kekocampuslive.editprofile.EditProfile
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.example.dinary.kekocampuslive.editprofile.EditProfile>
+
+            <com.example.dinary.kekocampuslive.editprofile.EditProfile
+                android:id="@+id/sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.example.dinary.kekocampuslive.editprofile.EditProfile>
+
+            <com.example.dinary.kekocampuslive.editprofile.EditProfile
+                android:id="@+id/confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.example.dinary.kekocampuslive.editprofile.EditProfile>
+
+            <com.example.dinary.kekocampuslive.editprofile.EditProfile
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.example.dinary.kekocampuslive.editprofile.EditProfile>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#999"/>
+
+            <com.example.dinary.kekocampuslive.editprofile.ProfileTextView
+                android:id="@+id/id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.example.dinary.kekocampuslive.editprofile.ProfileTextView>
+
+            <com.example.dinary.kekocampuslive.editprofile.ProfileTextView
+                android:id="@+id/level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.example.dinary.kekocampuslive.editprofile.ProfileTextView>
+
+            <com.example.dinary.kekocampuslive.editprofile.ProfileTextView
+                android:id="@+id/get_gifts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.example.dinary.kekocampuslive.editprofile.ProfileTextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#999"/>
+
+            <Button
+                android:id="@+id/btn_profile_complete_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textColor="@android:color/white"
+                android:text="@string/btn_complete"
+                android:background="@drawable/btn_selector"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

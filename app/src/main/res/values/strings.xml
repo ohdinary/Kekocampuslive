@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">KekoCampusLive</string>
+    <string name="hint_input_password">请输入密码</string>
+    <string name="hint_input_account">请输入用户名</string>
+    <string name="login">登      录</string>
+    <string name="register">注册新用户</string>
+    <string name="keko_live_terms">注册即表示同意 Keko直播条款</string>
+    <string name="hint_input_password_at_least_8_words">请输入登录密码</string>
+    <string name="repeat_password">请确认登录密码</string>
+    <string name="register_new_account">注册新账号</string>
+    <string name="hint_intput_register_account">请输入注册账号</string>
+    <string name="account_or_password_cannot_null">账号或密码不能为空！</string>
+    <string name="avatar">头像</string>
+    <string name="btn_complete">完      成</string>
+    <string name="comfirm">确定</string>
+</resources>

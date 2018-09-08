@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.dinary.kekocampuslive.widget.SizeChangeRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/size_change">
+
+    <com.tencent.ilivesdk.view.AVRootView
+        android:id="@+id/watch_live_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"/>
+
+    <com.example.dinary.kekocampuslive.view.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.example.dinary.kekocampuslive.view.TitleView>
+
+    <FrameLayout
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.example.dinary.kekocampuslive.view.BottomControlView
+            android:id="@+id/bottom_control_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"></com.example.dinary.kekocampuslive.view.BottomControlView>
+
+        <com.example.dinary.kekocampuslive.view.BottomChatView
+            android:id="@+id/bottom_chat_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.example.dinary.kekocampuslive.view.BottomChatView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/chat_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_view"
+        android:orientation="horizontal">
+
+        <com.example.dinary.kekocampuslive.view.ChatMsgListView
+            android:id="@+id/chat_list"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="2" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <com.example.dinary.kekocampuslive.view.VipEnterView
+        android:id="@+id/vip_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/chat_list_view"></com.example.dinary.kekocampuslive.view.VipEnterView>
+
+    <tyrantgit.widget.HeartLayout
+        android:id="@+id/heart_layout"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true" />
+
+    <com.example.dinary.kekocampuslive.view.DanmuView
+        android:id="@+id/danmu_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/chat_list_view"></com.example.dinary.kekocampuslive.view.DanmuView>
+
+    <com.example.dinary.kekocampuslive.view.GiftRepeatView
+        android:id="@+id/gift_repeat_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chat_list_view"></com.example.dinary.kekocampuslive.view.GiftRepeatView>
+
+    <com.example.dinary.kekocampuslive.view.GiftFullView
+        android:id="@+id/gift_full_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.example.dinary.kekocampuslive.view.GiftFullView>
+</com.example.dinary.kekocampuslive.widget.SizeChangeRelativeLayout>

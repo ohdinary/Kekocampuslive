@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_white_round_bkg">
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="选择性别"
+        android:gravity="center"
+        android:layout_margin="20dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gender_check_bkg"
+            android:drawableTop="@drawable/ic_male"
+            android:gravity="center"
+            android:button="@null"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="男"
+            android:textSize="22sp"/>
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="女"
+            android:background="@drawable/gender_check_bkg"
+            android:button="@null"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ic_female"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textSize="22sp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/edit_dialog_ok_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:text="@string/comfirm"
+        android:gravity="center"
+        android:textSize="22sp"/>
+</LinearLayout>
